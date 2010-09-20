@@ -1,0 +1,16 @@
+{application, policysrv,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, [
+               policysrv,
+               policysrv_sup,
+               policysrv_app     
+  ]},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { policysrv_app, []}},
+  {env, []}
+ ]}.
